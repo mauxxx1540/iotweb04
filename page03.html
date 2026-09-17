@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lugrasimo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&family=The+Nautigal:wght@400;700&family=Yuyu&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #020202;
+            margin: 0px;
+            text-decoration: none;
+        }
+       
+        .nav-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px;
+            padding: 30px 80px;
+            background-color: #b2d5e5;
+           
+        }
+        .menu{
+            display: flex;
+            font-family: 'Yuyu';
+            font-size: 35px;
+            color: #020202;
+        }
+        .buttonA a{
+           text-align: center;
+           font-family: 'Yuyu';
+           font-size: 20px;
+           color: #020202;
+           text-decoration: none;
+           margin: 0px 30px;
+        }
+        .buttonA a:hover{
+            text-decoration: underline;
+        }
+        .hero{
+        display: flex;
+        align-items: center;
+        margin: 120px 250px 100px 250px;
+        gap: 180px;
+        }
+        .hi{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        }
+        .hi #hi-span{
+            font-family: 'Yuyu';
+            font-size: 70px;
+            color: #b2d5e5;
+        }
+        .hi #lorem-span{
+            font-family: 'Yuyu';
+            margin-top: 10px;
+            font-size: 25px;
+            color: #b2d5e5;;
+        }
+        .hi #button-span{
+            font-family: 'Yuyu';
+            font-size: 20px;
+            width: 300px;
+            color: #020202;
+            padding: 22px 0px;
+            border: 2px solid #b2d5e5;
+            font-weight: bold;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0px 0px 20px #b2d5e5;
+        }
+        button:hover{
+            background-color: #b2d5e5;
+            cursor: pointer;
+        }
+        .button {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .button i{
+            background-color: #b2d5e5;
+            border-radius: 50%;
+            display: flex;
+            width: 70px;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #020202;
+        }
+        .button a, i{
+            text-decoration: none;
+        }
+       
+        .button i:hover{
+            color: #b2d5e5;
+        }
+        .h-imge img{
+            width: 500px;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+        .container2 {
+            display: flex;
+            margin: 0;
+            padding: 60px 20px;
+        }
+        #about{
+            display : flex;
+            margin-left: 230px;
+            font-family: 'Yuyu';
+            font-size: 60px;
+            color: #b2d5e5;
+            white-space: nowrap;
+        }
+        .col-right{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-left: 230px;
+        }
+        #text{
+            margin-right: 230px;
+            font-family: 'Yuyu';
+            font-size: 30px;
+            color: #b2d5e5;
+        }
+        #text2{
+            margin-right: 230px;
+            font-family: 'Yuyu';
+            font-size: 20px;
+            color: #b2d5e5;
+        }
+        .group #btn{
+            font-family: 'Yuyu';
+            font-size: 20px;
+            width: 300px;
+            color: #020202;
+            padding: 22px 0px;
+            border: 2px solid #b2d5e5;
+            font-weight: bold;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0px 0px 20px #b2d5e5;
+        }
+        .group{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .social-icons a i{
+            font-size: 50px;
+            margin: 10px;
+            color: #b2d5e5;
+            align-items: center;
+        }
+        .social-icons a i:hover{
+            color: #5eb9e4;
+        }
+        .h-imge2{
+            margin-left: 230px;
+            padding: 0 20px;
+        }
+        .h-imge2 img{
+            margin-left: 230px;
+            width: 1400px;
+            height: 600px;
+            border-radius: 100px;
+            margin: 10px auto 0;
+            padding: 0 20px;
+        }
+        .experience-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 80px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            color: #b2d5e5;
+        }
+ 
+        .section-title {
+            margin-left: 230px;
+            font-family: 'Yuyu';
+            font-size: 60px;
+            font-weight: bold;
+            white-space: nowrap;
+   
+        }
+ 
+        .col-right2 {
+            margin-top: 60px;
+            margin-right: 230px;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+        }
+        .exp-header {
+            font-family: 'Yuyu';
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+ 
+        .exp-header h3 {
+            font-family: 'Yuyu';
+            font-size: 30px;
+            margin: 0;
+        }
+ 
+        .exp-date {
+            color: #b2d5e5;
+            font-size: 16px;
+        }
+ 
+        .exp-desc {
+            color: #b2d5e5;
+            font-family: 'Yuyu';
+            margin: 0;
+            font-size: 15px;
+        }
+ 
+ 
+        .capability-selection{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 45px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            color: #b2d5e5;
+        }
+        .col-left2 .cap-title{
+            margin-left: 230px;
+            font-family: 'Yuyu';
+            font-size: 60px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .cap-lorem{
+            font-family: 'Yuyu';
+            font-size: 20px;
+            margin-top: 60px;
+            margin-bottom: 50px;
+            margin-right: 230px;
+        }
+        .button-cap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            margin-right: 230px;
+        }
+ 
+ 
+        .button-cap a {
+            text-decoration: none;
+            color: #b2d5e5;
+            border: 1px solid #b2d5e5;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-family: "Yuyu";
+        }
+ 
+        .button-cap a:hover {
+            background-color: #ffffff;
+            color: #b700f9;
+            border-color: #ffffff;
+        }
+ 
+        .container5 {
+            display: flex;
+            padding: 60px;
+            color: #b2d5e5;
+            gap: 40px;
+        }
+ 
+        .connect-title {
+            margin-left: 190px;
+            font-size: 60px;
+            margin-bottom: 25px;
+            font-family: 'Yuyu';
+        }
+ 
+        .connect-info p {
+            margin-left: 190px;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #b2d5e5;
+        }
+ 
+        .connect-info a {
+            color: #b2d5e5;
+            text-decoration: none;
+        }
+ 
+        .connect-info a:hover {
+            text-decoration: underline;
+        }
+ 
+        .social-icons2 {
+            margin-top: 50px;
+            display: flex;
+            gap: 30px;
+            margin-left: 190px;
+        }
+ 
+        .social-icons2 a {
+            color: #b2d5e5;
+            font-size: 50px;
+            text-decoration: none;
+        }
+ 
+        .social-icons2 a:hover {
+            color: #92b0ff;
+        }
+ 
+        .connect-form {
+            margin-left: 60px;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+ 
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 750px;
+        }
+ 
+        .form-group label {
+            font-size: 20px;
+            color: #b2d5e5;
+            font-family: 'Yuyu';
+        }
+ 
+        .form-group input,
+        .form-group textarea {
+           
+            background-color: #b700f9;
+            border: none;
+            border-radius: 6px;
+            padding: 15px 20px;
+            color: #b2d5e5;
+            font-size: 16px;
+            font-family: "Yuyu";
+            width: 100%;
+            box-sizing: border-box;
+        }
+ 
+        .submit-btn {
+            font-family: 'Yuyu';
+            font-size: 15px;
+            width: 150px;
+            color: #020202;
+            padding: 22px 0px;
+            border: 2px solid #91e48e;
+            font-weight: bold;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0px 0px 20px #91e48e;
+            margin-top: 20px;
+            }
+ 
+        .submit-btn:hover {
+            background-color: #b2d5e5;
+        }
+   
+        .site-footer {
+            background-color: #020202;
+            padding: 0 10% 40px 10%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+ 
+        .footer-line {
+            width: 1800px;
+            height: 1px;
+            background-color: #b2d5e5;
+            margin-bottom: 30px;
+        }
+ 
+        .copyright-text {
+            color: #c7cadd;
+            font-size: 17px;
+            font-family: 'Yuyu';
+            margin: 0;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class = "nav-bar">
+            <div class = "menu">
+                <span>THITIWORADA &nbsp;&nbsp; THAMMACHAI</span>
+            </div>
+            <div class = "buttonA">
+                <a href="">Work</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+ 
+        <div class="hero">
+            <div class="hi">
+                <span id="hi-span">HI, I AM <br> THITIWORADA TH.</span>
+                <span id="lorem-span">นักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์จากประเทศไทย <br> ที่มีความหลงใหลในการสร้าง เว็บไซต์ที่เข้าถึงได้และเป็นมิตรกับผู้ใช้</span>
+            <div class="button">
+                <button id="button-span">CONTACT ME</button>
+                <a href=""><i class="bi bi-github"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+            </div>
+            <div class = "h-imge">
+                <img src="./images/person2.png" alt="">
+            </div>
+        </div>
+ 
+        </div>
+    </div>
+ 
+    <div class="container2">
+   
+        <div class="col-left">
+            <span id="about">ABOUT ME</span>
+        </div>
+ 
+        <div class="col-right">
+            <span id="text">ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ในกรุงเทพฯ กำลังมองหาโอกาสที่น่าตื่นเต้น ในการ ทำงานมีพื้นฐานการศึกษาด้าน วิศวกรรมซอฟต์แวร์</span>
+            <span id="text2">ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์ มีความกระตือรือร้นและอยากรู้ อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js และการออกแบบ เว็บไซต์เล็กน้อยเมื่อไม่ได้เขียนโปรแกรม ดิฉัน/ผมชอบเล่นฟุตบอล ถ่ายภาพ และเล่นเกม FIFA, Diablo กำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ</span>
+ 
+        <div class="group">
+            <button id="btn">DOWNLOAD RESUME</button>
+            <div class="social-icons">
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-github"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class = "h-imge2">
+                <img src="./images/person3.png" alt="">
+    </div>
+ 
+ 
+ 
+ 
+    <div class="container3">
+        <div class="experience-section">
+    <!-- คอลัมน์ซ้าย -->
+    <div class="col-left">
+        <h2 class="section-title">MY EXPERIENCE</h2>
+    </div>
+   
+    <!-- คอลัมน์ขวา -->
+    <div class="col-right2">
+       
+        <!-- ประสบการณ์ที่ 1 -->
+        <div class="exp-item">
+            <div class="exp-header">
+                <h3>Freelance Developer</h3>
+                <span class="exp-date">Nov 2023 — Present</span>
+            </div>
+            <p class="exp-desc">
+                พัฒนาและปรับปรุงส่วนติดต่อผู้ใช้สำหรับเว็บแอปพลิเคชันโดยใช้ React.js ทำงานร่วมกับทีมออกแบบ UX/UI เพื่อสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจ ปรับปรุงความเร็วในการโหลดเว็บไซต์ด้วยเทคนิคการเพิ่มประสิทธิภาพต่างๆ ร่วมพัฒนาและดูแลไลบรารีคอมโพเนนต์ภายในองค์กร
+            </p>
+        </div>
+ 
+        <!-- ประสบการณ์ที่ 2 -->
+        <div class="exp-item">
+            <div class="exp-header">
+                <h3>Front-End Intern</h3>
+                <span class="exp-date">Sep 2023 — Nov 2023</span>
+            </div>
+            <p class="exp-desc">
+                พัฒนาเว็บไซต์ลูกค้าโดยใช้ HTML, CSS และ JavaScript
+                ช่วยปรับปรุงการเข้าถึง (Accessibility) ของเว็บไซต์ให้สอดคล้องกับมาตรฐาน WCAG
+                ทำงานร่วมกับทีมแบ็คเอนด์เพื่อเชื่อมต่อ API
+            </p>
+        </div>
+ 
+    </div>
+</div>
+</div>
+ 
+    <div class="container4">
+        <div class ="capability-selection">
+            <div class="col-left2">
+        <h2 class="cap-title">MY CAPABILITIES</h2>
+            </div>
+ 
+            <div class="col-right3">
+                <div>
+                    <p class="cap-lorem">
+                        ผมมองหาโอกาสในการเพิ่มทักษะใหม่ๆ อยู่เสมอ ทั้งการพัฒนาฟรอนท์เอนด์ แบล็กเอนต์ การออกแบบ UX/UI ฐานข้อมูล
+                    </p>
+ 
+                     <div class = "button-cap">
+                <a href="">HTML</a>
+                <a href="">CSS</a>
+                <a href="">JAVASCRIPT</a>
+                <a href="">FLUTTER</a> <br>
+                <a href="">DART</a>
+                <a href="">IoT</a>
+                <a href="">REACT</a>
+                <a href="">DATABASE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+ 
+ 
+    <div class="container5">
+        <!-- ฝั่งซ้าย: ข้อความและช่องทางติดต่อ -->
+        <div class="connect-info">
+            <h2 class="connect-title">LET'S CONNECT</h2>
+            <p>Say hello at <a href="mailto:chanintornc@sau.ac.th">s6819M10004@sau.ac.th</a></p>
+            <p>For more info, here's my <a href="#">resume</a></p>
+           
+            <div class="social-icons2">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+ 
+        <!-- ฝั่งขวา: ฟอร์มติดต่อ -->
+        <div class="connect-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SUBMIT</button>
+        </div>
+       
+    </div>
+    <footer class="site-footer">
+        <div class="footer-line"></div>
+        <p class="copyright-text">© 2025 Created by SAU-Dev-Team</p>
+</footer>
+</div>
+</body>
+</html>
+ 
